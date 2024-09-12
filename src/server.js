@@ -83,7 +83,6 @@ const Connection = async () => {
         const msg = messages[0]
         const jid = msg.key.remoteJid
         const nomeUsuario = msg.pushName
-        const saudacao = welcome(date)
 
         const text = msg?.message?.conversation;
         if (text === '!ping') {
