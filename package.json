@@ -1,0 +1,17 @@
+{
+  "name": "seven-whats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --watch ./src/server.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "github:WhiskeySockets/Baileys",
+    "express": "^4.17.3",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
