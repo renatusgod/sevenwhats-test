@@ -84,7 +84,7 @@ const Connection = async () => {
         const jid = msg.key.remoteJid
         const nomeUsuario = msg.pushName
 
-        const text = msg?.message?.conversation;
+        const text = msg?.message?.conversation ?? msg?.message?.extendedTextMessage?.text;
         if (text === '!ping') {
             const result = await SendMessage(jid, { text: "pong!" })
             console.log('RESULT: ', result);
